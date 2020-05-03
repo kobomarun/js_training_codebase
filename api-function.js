@@ -3,15 +3,20 @@
 function getAPI() {
     let api = document.getElementById('api');
     let html;
-    console.log('fetch')
-    fetch('https://jsonplaceholder.typicode.com/posts/')
+    fetch('https://jsonplaceholder.typicode.com/posts/?_limit=10')
     .then(response => response.json())
     .then(response =>  {
+        console.log('fetch', response)
         response.map(item => {
-            html += `<td>${item.userId}</td>
-                        <td>${item.title}</td>`;
+            html += `<tr>
+                        <td>${item.id}</td>
+                        <td>${item.userId}</td>
+                        <td>${item.title}</td>
+                        <td>${item.body}</td>
+                    </tr>`;
             return(
                 api.innerHTML = html
+
             )
         })
     })
