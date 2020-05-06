@@ -1,4 +1,3 @@
-"use strict"
 
 function handleForm() {
     event.preventDefault();
@@ -24,3 +23,4 @@ function handleForm() {
     document.getElementById('email').value ='';
     document.getElementById('message').value = '';
 }
+
