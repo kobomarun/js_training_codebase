@@ -23,8 +23,6 @@ function getAPI() {
     .catch(error => console.log(error))
 }
 
-
-
 getAPI();
 
 
