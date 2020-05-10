@@ -5,7 +5,6 @@ function handleForm() {
     let email = document.getElementById('email').value
     let message = document.getElementById('message').value
 
-   
 
     setTimeout(function() {
          // display hidden div

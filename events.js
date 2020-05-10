@@ -14,4 +14,7 @@ document.addEventListener('keydown', logKey);
 
 function logKey(e) {
   log.textContent += `${e.code}`;
+  if(log.textContent == "MetaLeft") {
+      alert("awesome")
+  }
 }

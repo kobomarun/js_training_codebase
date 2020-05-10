@@ -1,3 +1,22 @@
+function validatePost() {
+    event.preventDefault();
+    let title = document.getElementById('title').value;
+    let body = document.getElementById('body').value;
+    if (title && body == "") {
+      alert("Title or body must be filled out");
+    }
+    else if(Number.isInteger(+title)) {
+        alert("Title must be a text");
+
+    }
+    else if(Number.isInteger(+body)) {
+        alert("Body must be a text");
+
+      return false;
+    }
+
+  }
+  
 function handlePost() {
     event.preventDefault();
     let title = document.getElementById('title').value;
@@ -27,6 +46,8 @@ function handlePost() {
     })
 
 }
+
+
 
 
 
