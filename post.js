@@ -1,3 +1,4 @@
+// Basic validation
 function validatePost() {
     event.preventDefault();
     let title = document.getElementById('title').value;
@@ -14,6 +15,8 @@ function validatePost() {
 
       return false;
     }
+    // This calls the handle post method when its done validating
+    this.handlePost();
 
   }
   
